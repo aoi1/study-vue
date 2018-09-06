@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./main.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+  <div id="app">
+    <button v-on:click="handleClick">click</button>
+  </div>
+    <img src="image.png" v-on:load="show=true" v-bind:class="{hide: !show}">
+  <script src="13.js"></script>
+  </body>
+<html>
