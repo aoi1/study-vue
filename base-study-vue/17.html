@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+  <div id="app">
+    <select v-model="current">
+      <option v-for="topic in topics" v-bind:value="topic.value">
+        {{ topic.name }}
+      </option>
+    </select>
+    <div v-for="item in list">{{ item.full_name }}</div>
+  </div>
+  <script src="17.js"></script>
+  </body>
+<html>
